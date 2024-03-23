@@ -385,10 +385,14 @@ cat > file21
 1003 | Joe |  7000 | Developer
 1005 | Sam |  5000 | HR
 1004 | Sit |  7000 | Dev
-``` 
-sort file21
+```
 ## OUTPUT
 
+![Screenshot from 2024-03-23 09-21-55](https://github.com/Gchethankumar/OS-Linux-commands-Shell-script/assets/118348224/048c500e-c787-4907-b533-ee5ea4445e73)
+
+sort file21
+## OUTPUT
+![Screenshot from 2024-03-23 09-22-02](https://github.com/Gchethankumar/OS-Linux-commands-Shell-script/assets/118348224/3e8f196f-6212-4ec7-be32-224a84473e9c)
 
 cat > file22
 ```
@@ -398,43 +402,52 @@ cat > file22
 1003 | Joe |  7000 | Developer
 1005 | Sam |  5000 | HR
 1004 | Sit |  7000 | Dev
-``` 
+```
+## OUTPUT
+![Screenshot from 2024-03-23 09-22-09](https://github.com/Gchethankumar/OS-Linux-commands-Shell-script/assets/118348224/5b515738-d969-4a82-aa1f-9a658104f574)
+
 uniq file22
 ## OUTPUT
 
+![Screenshot from 2024-03-23 09-22-19](https://github.com/Gchethankumar/OS-Linux-commands-Shell-script/assets/118348224/6d420a67-2b8b-43ac-b2f5-62380630208a)
 
 
 #Using tr command
 
 cat file23 | tr [:lower:] [:upper:]
  ## OUTPUT
+![Screenshot from 2024-03-23 09-22-33](https://github.com/Gchethankumar/OS-Linux-commands-Shell-script/assets/118348224/9867ff63-80ba-42fb-83ef-fb7aef8cd40b)
 
-cat < urllist.txt
+cat > urllist.txt
 ```
 www. yahoo. com
 www. google. com
 www. mrcet.... com
 ^d
  ```
-cat > urllist.txt
-```
-www. yahoo. com
-www. google. com
-www. mrcet.... com
- ```
+## OUTPUT
+![Screenshot from 2024-03-23 09-22-48](https://github.com/Gchethankumar/OS-Linux-commands-Shell-script/assets/118348224/cda8027e-75dc-42aa-a8e3-83f9bb1bbf1a)
+
+cat < urllist.txt
+## OUTPUT
+![Screenshot from 2024-03-23 09-22-55](https://github.com/Gchethankumar/OS-Linux-commands-Shell-script/assets/118348224/34acb606-e0ab-4be0-8dbd-76e399ec1a20)
+
 cat urllist.txt | tr -d ' '
  ## OUTPUT
 
+![Screenshot from 2024-03-23 09-23-03](https://github.com/Gchethankumar/OS-Linux-commands-Shell-script/assets/118348224/d882dcc5-5e52-45ff-96d9-e81ad4729e67)
 
  
 cat urllist.txt | tr -d ' ' | tr -s '.'
 ## OUTPUT
 
+![Screenshot from 2024-03-23 09-23-23](https://github.com/Gchethankumar/OS-Linux-commands-Shell-script/assets/118348224/748f4d0c-5afa-445e-9c43-2f5d2b7a116a)
 
 
 #Backup commands
 tar -cvf backup.tar *
 ## OUTPUT
+![Screenshot from 2024-03-23 09-23-34](https://github.com/Gchethankumar/OS-Linux-commands-Shell-script/assets/118348224/2a8bb54e-8436-4cde-b522-45cbc03124f7)
 
 
 mkdir backupdir
