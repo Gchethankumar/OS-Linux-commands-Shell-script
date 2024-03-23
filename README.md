@@ -482,9 +482,14 @@ gunzip backup.tar.gz
 echo '#!/bin/sh' > my-script.sh
 echo 'echo Hello World‘; exit 0 >> my-script.sh
 ```
+## OUTPUT 
+![s64](https://github.com/Gchethankumar/OS-Linux-commands-Shell-script/assets/118348224/bdf9c0a3-0811-49e3-b968-9207a9cc78b3)
+
 chmod 755 my-script.sh
 ./my-script.sh
+
 ## OUTPUT
+![s65](https://github.com/Gchethankumar/OS-Linux-commands-Shell-script/assets/118348224/014ef4cd-76af-4165-bf58-615131987953)
 
  
 cat << stop > herecheck.txt
@@ -492,11 +497,17 @@ cat << stop > herecheck.txt
 hello in this world
 i cant stop
 for this non stop movement
-stop
+stop!
 ```
+
+## OUTPUT
+
+![Screenshot from 2024-03-23 10-47-30](https://github.com/Gchethankumar/OS-Linux-commands-Shell-script/assets/118348224/21ac40bc-897b-41b4-a490-eec11adad1ad)
 
 cat herecheck.txt
 ## OUTPUT
+
+![Screenshot from 2024-03-23 10-47-42](https://github.com/Gchethankumar/OS-Linux-commands-Shell-script/assets/118348224/5b6daa54-14ef-4612-bac0-ff424777d9fa)
 
 
 cat < scriptest.sh 
@@ -514,6 +525,8 @@ echo 'The $$ is ' $$
 ps
 ^d
  ```
+## OUTPUT
+![Screenshot from 2024-03-23 10-51-06](https://github.com/Gchethankumar/OS-Linux-commands-Shell-script/assets/118348224/99044f95-fd79-478c-b178-d2084bee52f5)
 
 cat scriptest.sh 
 ```bash
@@ -529,29 +542,38 @@ echo 'The $\# is ' $\#
 echo 'The $$ is ' $$
 ps
 ```
+## OUTPUT
+![Screenshot from 2024-03-23 10-51-29](https://github.com/Gchethankumar/OS-Linux-commands-Shell-script/assets/118348224/eed70459-6f4d-4647-9c95-a56807973c61)
+
  
 chmod 777 scriptest.sh
  
 ./scriptest.sh 1 2 3
 
 ## OUTPUT
+![Screenshot from 2024-03-23 10-53-33](https://github.com/Gchethankumar/OS-Linux-commands-Shell-script/assets/118348224/54543a13-f3ed-4da7-8790-df28fe7c29f2)
 
  
 ls file1
 ## OUTPUT
+![Screenshot from 2024-03-23 10-55-18](https://github.com/Gchethankumar/OS-Linux-commands-Shell-script/assets/118348224/e28fcae2-326a-4953-9d11-f6ac2cffebbe)
 
 echo $?
 ## OUTPUT 
+![Screenshot from 2024-03-23 10-55-29](https://github.com/Gchethankumar/OS-Linux-commands-Shell-script/assets/118348224/45574292-219e-4a5d-8d9d-c3e5a864ca44)
+
 ./one
 bash: ./one: Permission denied
  
 echo $?
 ## OUTPUT 
- 
+ ![s73](https://github.com/Gchethankumar/OS-Linux-commands-Shell-script/assets/118348224/09cb39e8-2224-4b98-95cd-a79d14abb3cc)
+
 abcd
  
 echo $?
  ## OUTPUT
+![Screenshot from 2024-03-23 10-55-29](https://github.com/Gchethankumar/OS-Linux-commands-Shell-script/assets/118348224/c5ad5e53-e88b-4d72-b1d5-7a155d6395d1)
 
 
  
@@ -583,14 +605,16 @@ else
 echo "$val1 is less than $val2"
 fi
 ```
-##OUTPUT
+## OUTPUT
 
+![Screenshot from 2024-03-23 11-00-28](https://github.com/Gchethankumar/OS-Linux-commands-Shell-script/assets/118348224/e04c8ea1-7faf-4474-a4c3-2a09d29567e4)
 
 
 chmod 755 strcomp.sh
  
 ./strcomp.sh 
 ## OUTPUT
+![s77](https://github.com/Gchethankumar/OS-Linux-commands-Shell-script/assets/118348224/01d9bd48-13e1-4844-ab05-83c3407f3d18)
 
 
 # check file ownership
@@ -616,8 +640,13 @@ else
 echo “Sorry, you are not the owner of the /etc/passwd file”
 fi
  ```
-./psswdperm.sh
 ## OUTPUT
+![s78](https://github.com/Gchethankumar/OS-Linux-commands-Shell-script/assets/118348224/0da9b41a-e18b-40ca-9979-f3680f41fa0b)
+
+./psswdperm.sh
+
+![s79](https://github.com/Gchethankumar/OS-Linux-commands-Shell-script/assets/118348224/d8328dc8-ac02-407a-a9ce-bc7ac7e8fbe7)
+
 
 # check if with file location
 cat>ifnested.sh 
@@ -661,11 +690,13 @@ else
 echo “Sorry, the object does not exist”
 fi
 ```
-
-./ifnested.sh 
 ## OUTPUT
 
+![s81](https://github.com/Gchethankumar/OS-Linux-commands-Shell-script/assets/118348224/84e2cd12-2b76-459d-a6bb-eef7eda187ea)
 
+./ifnested.sh 
+
+![s80](https://github.com/Gchethankumar/OS-Linux-commands-Shell-script/assets/118348224/1c846423-5d26-414c-a6a2-8476c7f06958)
 
 # using numeric test comparisons
 cat > iftest.sh 
@@ -703,11 +734,13 @@ else
 echo “The values are different”
 fi
 ```
+![s82](https://github.com/Gchethankumar/OS-Linux-commands-Shell-script/assets/118348224/6759e5b3-664d-4046-ba33-c6a88ae84f66)
 
 $ chmod 755 iftest.sh
  
 $ ./iftest.sh 
-##OUTPUT
+## OUTPUT
+![s83](https://github.com/Gchethankumar/OS-Linux-commands-Shell-script/assets/118348224/1a67eb4d-e30c-44f2-bef3-f7716d7c0758)
 
 # check if a file
 cat > ifnested.sh 
@@ -752,11 +785,14 @@ else
 echo “Sorry, the object does not exist”
 fi
 ```
-
+## OUTPUT
+![s84](https://github.com/Gchethankumar/OS-Linux-commands-Shell-script/assets/118348224/2ad74255-eeb3-4a9c-b169-827cf34b8f00)
 $ chmod 755 ifnested.sh
  
 $ ./ifnested.sh 
-##OUTPUT
+
+![s85](https://github.com/Gchethankumar/OS-Linux-commands-Shell-script/assets/118348224/c24055ba-77c7-485e-b212-b976994131a0)
+
 
 # looking for a possible value using elif
 cat elifcheck.sh 
@@ -780,11 +816,13 @@ else
 echo "Sorry, you are not allowed here"
 fi
 ```
+![s86](https://github.com/Gchethankumar/OS-Linux-commands-Shell-script/assets/118348224/874f856b-8bf8-4382-8075-224174c56a27)
 
 $ chmod 755 elifcheck.sh
  
 $ ./elifcheck.sh 
 ## OUTPUT
+![s87](https://github.com/Gchethankumar/OS-Linux-commands-Shell-script/assets/118348224/0fbccdcf-2578-4141-9380-fd43db7e1e28)
 
 
 # testing compound comparisons
@@ -801,6 +839,8 @@ fi
 $ chmod 755 ifcompound.sh
 $ ./ifcompound.sh 
 ## OUTPUT
+
+![s88](https://github.com/Gchethankumar/OS-Linux-commands-Shell-script/assets/118348224/c7ac68a5-2e59-4663-8d0f-4a6c7305a44f)
 
 # using the case command
 cat >casecheck.sh 
@@ -820,7 +860,9 @@ esac
 $ chmod 755 casecheck.sh 
  
 $ ./casecheck.sh 
- 
+
+ ![s89](https://github.com/Gchethankumar/OS-Linux-commands-Shell-script/assets/118348224/bdbb3a21-794b-4e27-b65e-b03e2cf12329)
+
 cat > whiletest
 ```bash
 #!/bin/bash
@@ -836,7 +878,8 @@ $ chmod 755 whiletest.sh
  
 $ ./whiletest.sh
  
- 
+ ![s90](https://github.com/Gchethankumar/OS-Linux-commands-Shell-script/assets/118348224/7d9a5d44-e215-46fd-beb4-29568658dcb0)
+
 cat untiltest.sh 
 ```bash
 \#using the until command
@@ -847,9 +890,11 @@ echo $var1
 var1=$[ $var1 - 25 ]
 done
 ``` 
-$ chmod 755 untiltest.sh
+$ chmod 755 
+untiltest.sh
  
- 
+ ![s91](https://github.com/Gchethankumar/OS-Linux-commands-Shell-script/assets/118348224/03992606-2d10-410b-9e70-0b69ce886062)
+
  
 cat forin1.sh 
 ```bash
@@ -873,9 +918,12 @@ do
 echo “word:$test”
 done
  ```
- 
-$ chmod 755 forin2.sh
- 
+ ![s92](https://github.com/Gchethankumar/OS-Linux-commands-Shell-script/assets/118348224/28a6e70f-398e-4423-a5dd-197c75ad747d)
+
+$ chmod 755 
+forin2.sh
+ ![s93](https://github.com/Gchethankumar/OS-Linux-commands-Shell-script/assets/118348224/26d17105-4a53-4291-9aef-02db8fd51762)
+
 cat forin2.sh 
 ```bash
 \#!/bin/bash
@@ -888,7 +936,8 @@ done
 $ chmod 755 forin2.sh
  
 $ ./forin2.sh 
- 
+ ![s94](https://github.com/Gchethankumar/OS-Linux-commands-Shell-script/assets/118348224/b53aef7f-c1dc-42c4-a985-5357dbb3ce5e)
+
 cat forin3.sh 
 ```bash
 \#!/bin/bash
@@ -899,7 +948,8 @@ echo "word:$test"
 done
 ```
 $ ./forin3.sh 
- 
+ ![s95](https://github.com/Gchethankumar/OS-Linux-commands-Shell-script/assets/118348224/9c53e279-3c23-462c-ac5c-f677f4ab68fe)
+
 cat forin1.sh 
 ```bash
 #!/bin/bash
@@ -934,6 +984,10 @@ Khammam
 
 ## OUTPUT
 
+![s96](https://github.com/Gchethankumar/OS-Linux-commands-Shell-script/assets/118348224/222dbde2-84e3-44d1-b28f-b18472e5a592)
+
+![s97](https://github.com/Gchethankumar/OS-Linux-commands-Shell-script/assets/118348224/ce6b0b9e-a02c-4aac-b8ea-e984a371046d)
+
 
 cat forctype.sh 
 ```bash
@@ -946,7 +1000,10 @@ done
 ````
 $ chmod 755 forctype.sh
 $ ./forctype.sh 
-## OUTPUT
+## OUTPUT!
+
+![s98](https://github.com/Gchethankumar/OS-Linux-commands-Shell-script/assets/118348224/173671ad-a52e-4087-932c-95cd48ebd910)
+
 
 cat forctype1.sh 
 ```bash
@@ -960,6 +1017,8 @@ done
 $ chmod 755 forctype.sh
 $ ./forctype1.sh 
 ## OUTPUT
+
+![s99](https://github.com/Gchethankumar/OS-Linux-commands-Shell-script/assets/118348224/292cfe54-eb38-4523-b2c6-2e27613acdcd)
 
 cat fornested1.sh 
 ```bash
@@ -978,6 +1037,7 @@ $ chmod 755 fornested1.sh
  
 $ ./fornested1.sh 
  ## OUTPUT
+![s100](https://github.com/Gchethankumar/OS-Linux-commands-Shell-script/assets/118348224/90894ff9-2239-42fd-80df-c508f929458a)
 
  
 cat forbreak.sh 
@@ -995,6 +1055,7 @@ done
 echo "The for loop is completed“
 ```
 ## OUTPUT
+![s101](https://github.com/Gchethankumar/OS-Linux-commands-Shell-script/assets/118348224/f838defc-d72e-4cbb-b46b-455725a3556a)
 
 $ chmod 755 forbreak.sh
  
@@ -1020,7 +1081,8 @@ $ chmod 755 forcontinue.sh
  
 $ ./forcontinue.sh 
 ## OUTPUT
- 
+ ![s102](https://github.com/Gchethankumar/OS-Linux-commands-Shell-script/assets/118348224/24503d61-1397-4cc1-8331-ec146a83c545)
+
 cat exread.sh 
 ```bash
 #!/bin/bash
@@ -1035,6 +1097,7 @@ $ chmod 755 exread.sh
 $ ./exread.sh 
 ## OUTPUT
 
+![s103](https://github.com/Gchethankumar/OS-Linux-commands-Shell-script/assets/118348224/04c7f4a7-8382-472f-86c2-2c6bcf30e178)
 
  cat exread1.sh
 ```bash
@@ -1047,6 +1110,7 @@ $ chmod 755 exread1.sh
 
 ## OUTPUT
 
+![s104](https://github.com/Gchethankumar/OS-Linux-commands-Shell-script/assets/118348224/67031682-15ed-4078-9365-5baf9fab0f00)
 
 
 $ ./exread1.sh 
@@ -1068,6 +1132,7 @@ fi
 ```
 ## OUTPUT
  ./funcex.sh 
+![s105](https://github.com/Gchethankumar/OS-Linux-commands-Shell-script/assets/118348224/578b4499-2b76-4f23-8c37-a2e1d7f47314)
 
  
  ./funcex.sh 1 2
@@ -1085,7 +1150,9 @@ $ chmod 777 argshift.sh
 
 ## OUTPUT
 $ ./argshift.sh 1 2 3
- 
+
+ ![s106](https://github.com/Gchethankumar/OS-Linux-commands-Shell-script/assets/118348224/b6eda0e0-993b-4317-9601-a395769724cc)
+
  cat argshift1.sh
 ```bash
  #/bin/bash 
@@ -1102,7 +1169,8 @@ done
 $ chmod 777 argshift.sh
 ## OUTPUT
 $ ./argshift.sh 1 2 3
- 
+ ![s107](https://github.com/Gchethankumar/OS-Linux-commands-Shell-script/assets/118348224/8bad907b-a8db-4faf-b2d3-32da046c8203)
+
 cat argshift.sh
 ```bash
 #!/bin/bash 
@@ -1115,7 +1183,8 @@ set +x
 ```
 ## OUTPUT
  ./argshift.sh 1 2 3
- 
+ ![s108](https://github.com/Gchethankumar/OS-Linux-commands-Shell-script/assets/118348224/bb6d3d4c-e4ab-4f3b-8af2-9b8733e16d6b)
+
  
 cat > nc.awk
 ```bash
@@ -1131,6 +1200,9 @@ print "Number of Lines are",NR
 print "No of Words count:",wordcount
 }
  ```
+
+![s109](https://github.com/Gchethankumar/OS-Linux-commands-Shell-script/assets/118348224/7b4f6a14-b75f-43a9-8988-bf9dceee241a)
+
 cat>data.dat
 ```bash
 bcdfghj
@@ -1144,9 +1216,12 @@ obcdfghj
 bcdfghj
 ubcdfghj
 ```
+![s110](https://github.com/Gchethankumar/OS-Linux-commands-Shell-script/assets/118348224/155ce2e5-5dbc-4302-87ca-f8ad92f8331c)
+
 awk -f nc.awk data.dat
 ## OUTPUT 
- 
+ ![s111](https://github.com/Gchethankumar/OS-Linux-commands-Shell-script/assets/118348224/00f334f2-ad9c-4094-8e9a-16f07c6a1d30)
+
 cat > palindrome.sh
 ```bash
 #num=545
@@ -1173,6 +1248,7 @@ else
 fi
 ```
 ## OUTPUT 
+![s112](https://github.com/Gchethankumar/OS-Linux-commands-Shell-script/assets/118348224/6ee0902d-dd7b-4d47-93fd-f74c40073ae1)
 
 
 # RESULT:
