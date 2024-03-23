@@ -453,21 +453,28 @@ tar -cvf backup.tar *
 mkdir backupdir
  
 mv backup.tar backupdir
- 
+ ## OUTPUT
+ ![Screenshot from 2024-03-23 09-42-28](https://github.com/Gchethankumar/OS-Linux-commands-Shell-script/assets/118348224/9931dce5-53c1-4529-afa8-30be564abc72)
+
 tar -tvf backup.tar
 ## OUTPUT
+![Screenshot from 2024-03-23 09-42-49](https://github.com/Gchethankumar/OS-Linux-commands-Shell-script/assets/118348224/a841f4bc-dcbf-4a44-b800-7a1f83d4b668)
 
 
 tar -xvf backup.tar
 ## OUTPUT
+![Screenshot from 2024-03-23 09-43-07](https://github.com/Gchethankumar/OS-Linux-commands-Shell-script/assets/118348224/1d90e3fd-d7e6-4a3d-a8d3-4c6e1e590938)
 
 gzip backup.tar
 
 ls .gz
 ## OUTPUT
- 
+ ![Screenshot from 2024-03-23 09-43-26](https://github.com/Gchethankumar/OS-Linux-commands-Shell-script/assets/118348224/e2e94645-0b25-4e3a-af7f-f6f9f2717274)
+
 gunzip backup.tar.gz
 ## OUTPUT
+
+![Screenshot from 2024-03-23 09-43-39](https://github.com/Gchethankumar/OS-Linux-commands-Shell-script/assets/118348224/e8fa7cf3-5d9d-43ad-aa15-1f76184bb9d1)
 
  
 # Shell Script
