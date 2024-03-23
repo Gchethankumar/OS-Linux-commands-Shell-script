@@ -39,26 +39,40 @@ lalit chowdury
 s.n. dasgupta
 ^d
 ```
-### Display the content of the files
-cat < file1
 ## OUTPUT
 
+![Screenshot from 2024-03-23 08-24-57](https://github.com/Gchethankumar/OS-Linux-commands-Shell-script/assets/118348224/b83a11d4-dde5-4d6b-b7ae-ec5d323e00f5)
+
+
+### Display the content of the files
+cat < file1
+
+## OUTPUT
+
+![Screenshot from 2024-03-23 08-25-09](https://github.com/Gchethankumar/OS-Linux-commands-Shell-script/assets/118348224/9926312a-d1b9-49e9-8169-cd8975698119)
 
 
 cat < file2
+
 ## OUTPUT
+
+![Screenshot from 2024-03-23 08-25-20](https://github.com/Gchethankumar/OS-Linux-commands-Shell-script/assets/118348224/10514701-12c6-41a8-83ce-67db53e0ea02)
 
 
 # Comparing Files
 cmp file1 file2
 ## OUTPUT
- 
+
+ ![Screenshot from 2024-03-23 08-27-23](https://github.com/Gchethankumar/OS-Linux-commands-Shell-script/assets/118348224/916dfb12-b2ca-4f6f-8438-b3511720830a)
+
 comm file1 file2
  ## OUTPUT
+![Screenshot from 2024-03-23 08-27-57](https://github.com/Gchethankumar/OS-Linux-commands-Shell-script/assets/118348224/2a237cdb-88ad-4bae-9831-f375d4790ddb)
 
  
 diff file1 file2
 ## OUTPUT
+![Screenshot from 2024-03-23 08-28-37](https://github.com/Gchethankumar/OS-Linux-commands-Shell-script/assets/118348224/bed7ba59-d785-4cf1-8b7e-fecd743fbccd)
 
 
 #Filters
@@ -78,71 +92,86 @@ cat > file22
 1003 | Joe |  7000 | Developer
 ^d
 ```
+## OUTPUT
+
+![Screenshot from 2024-03-23 08-30-10](https://github.com/Gchethankumar/OS-Linux-commands-Shell-script/assets/118348224/501e6492-c5b4-41df-b05f-c8c89d89ef0c)
 
 
 cut -c1-3 file11
 ## OUTPUT
 
-
-
+![Screenshot from 2024-03-23 08-34-05](https://github.com/Gchethankumar/OS-Linux-commands-Shell-script/assets/118348224/b3eb2c3d-85ac-483f-8f69-bdb1f7f64946)
 
 cut -d "|" -f 1 file22
 ## OUTPUT
 
+![Screenshot from 2024-03-23 08-34-19](https://github.com/Gchethankumar/OS-Linux-commands-Shell-script/assets/118348224/ef49f4f3-c899-4959-9300-017efb45fde6)
 
 
 cut -d "|" -f 2 file22
 ## OUTPUT
 
+![Screenshot from 2024-03-23 08-34-27](https://github.com/Gchethankumar/OS-Linux-commands-Shell-script/assets/118348224/f7e72c10-4216-478b-9514-a8ec5efbc728)
 
-cat < newfile 
+cat > newfile 
 ```
 Hello world
 hello world
 ^d
 ````
-cat > newfile 
-Hello world
-hello world
+## OUTPUT
+![Screenshot from 2024-03-23 08-34-36](https://github.com/Gchethankumar/OS-Linux-commands-Shell-script/assets/118348224/d666e058-3b78-4505-98db-5269d3660d3f)
+
+cat < newfile 
+
+## OUTPUT
+
+![Screenshot from 2024-03-23 08-37-47](https://github.com/Gchethankumar/OS-Linux-commands-Shell-script/assets/118348224/8c71256b-573e-4095-aa42-bad49c30a4f9)
+
  
 grep Hello newfile 
 ## OUTPUT
 
+![Screenshot from 2024-03-23 08-38-26](https://github.com/Gchethankumar/OS-Linux-commands-Shell-script/assets/118348224/ae76bdad-f2ad-4f9a-82b3-256e4b30018b)
 
 
 grep hello newfile 
 ## OUTPUT
 
+![Screenshot from 2024-03-23 08-38-34](https://github.com/Gchethankumar/OS-Linux-commands-Shell-script/assets/118348224/2b428b5b-6484-4dd1-bac6-03bb7f3eb72a)
 
 
 
 grep -v hello newfile 
 ## OUTPUT
 
+![Screenshot from 2024-03-23 08-38-44](https://github.com/Gchethankumar/OS-Linux-commands-Shell-script/assets/118348224/e3ab7ed4-bfc0-48b4-bf02-0aa9ffb680fc)
 
 
 cat newfile | grep -i "hello"
 ## OUTPUT
 
-
+![Screenshot from 2024-03-23 08-39-00](https://github.com/Gchethankumar/OS-Linux-commands-Shell-script/assets/118348224/71549128-f5fd-478e-822d-2a31210f4740)
 
 
 cat newfile | grep -i -c "hello"
 ## OUTPUT
 
-
-
+![Screenshot from 2024-03-23 08-42-37](https://github.com/Gchethankumar/OS-Linux-commands-Shell-script/assets/118348224/2464e2c8-ffa2-497c-ac0e-84fda899b5d9)
 
 grep -R ubuntu /etc
 ## OUTPUT
+![Screenshot from 2024-03-23 08-43-14](https://github.com/Gchethankumar/OS-Linux-commands-Shell-script/assets/118348224/adb70c16-e7d3-42cd-8f88-a742a8126667)
+![Screenshot from 2024-03-23 08-43-41](https://github.com/Gchethankumar/OS-Linux-commands-Shell-script/assets/118348224/e0b8b5ff-33de-4fcc-8f74-81d02c36a8c6)
 
 
 
 grep -w -n world newfile   
 ## OUTPUT
+![Screenshot from 2024-03-23 08-44-05](https://github.com/Gchethankumar/OS-Linux-commands-Shell-script/assets/118348224/3cc1193a-10a8-42c6-bb25-3faf8b5f43eb)
 
 
-cat < newfile 
+cat > newfile 
 ```
 Hello world
 hello world
@@ -151,8 +180,11 @@ Unix is predecessor
 Linux is best in this World
 ^d
 ```
+## OUTPUT
 
-cat > newfile
+![Screenshot from 2024-03-23 08-45-19](https://github.com/Gchethankumar/OS-Linux-commands-Shell-script/assets/118348224/7660b4a9-f18f-4193-9bef-cd53290c1881)
+
+cat < newfile
 ```
 Hello world
 hello world
@@ -161,61 +193,77 @@ Unix is predecessor
 Linux is best in this World
 ^d
  ```
+## OUTPUT
+
+![Screenshot from 2024-03-23 08-45-25](https://github.com/Gchethankumar/OS-Linux-commands-Shell-script/assets/118348224/4d07e3b6-97cc-4de7-9b47-9ba7d00191f7)
+
 egrep -w 'Hello|hello' newfile 
 ## OUTPUT
 
+![Screenshot from 2024-03-23 08-51-10](https://github.com/Gchethankumar/OS-Linux-commands-Shell-script/assets/118348224/8bfff398-9682-4f6f-9921-909b7b9cd760)
 
 
 egrep -w '(H|h)ello' newfile 
 ## OUTPUT
 
+![Screenshot from 2024-03-23 08-51-22](https://github.com/Gchethankumar/OS-Linux-commands-Shell-script/assets/118348224/982102f5-7177-4383-9a5c-cfddeb347b98)
 
 
 egrep -w '(H|h)ell[a-z]' newfile 
 ## OUTPUT
 
 
+![Screenshot from 2024-03-23 08-51-36](https://github.com/Gchethankumar/OS-Linux-commands-Shell-script/assets/118348224/7a4915e1-c1a1-4876-b2e6-6d7360791b25)
 
 
 egrep '(^hello)' newfile 
 ## OUTPUT
 
+![Screenshot from 2024-03-23 08-51-52](https://github.com/Gchethankumar/OS-Linux-commands-Shell-script/assets/118348224/c2cac1ff-c608-487a-b262-912bcf84d43f)
 
 
 egrep '(world$)' newfile 
 ## OUTPUT
 
+![Screenshot from 2024-03-23 08-52-43](https://github.com/Gchethankumar/OS-Linux-commands-Shell-script/assets/118348224/44c6bfa9-7842-4f25-bfaa-b75c1821ffb1)
 
 
 egrep '(World$)' newfile 
 ## OUTPUT
+![Screenshot from 2024-03-23 08-52-55](https://github.com/Gchethankumar/OS-Linux-commands-Shell-script/assets/118348224/91dd99e0-0382-4655-bfbb-c9c69430c769)
 
 
 egrep '((W|w)orld$)' newfile 
 ## OUTPUT
 
+![Screenshot from 2024-03-23 08-53-07](https://github.com/Gchethankumar/OS-Linux-commands-Shell-script/assets/118348224/0b9bdbca-a3a5-4559-9c72-3c12ddcd5beb)
 
 
 egrep '[1-9]' newfile 
 ## OUTPUT
 
+![Screenshot from 2024-03-23 08-53-16](https://github.com/Gchethankumar/OS-Linux-commands-Shell-script/assets/118348224/8cabb5ed-792d-4084-9d05-7d53fbca4e8b)
 
 
 egrep 'Linux.*world' newfile 
 ## OUTPUT
+![Screenshot from 2024-03-23 08-54-04](https://github.com/Gchethankumar/OS-Linux-commands-Shell-script/assets/118348224/a607faa9-8071-4620-8f77-7fda6b92e0d1)
 
 
 egrep 'Linux.*World' newfile 
 ## OUTPUT
 
+![Screenshot from 2024-03-23 08-54-11](https://github.com/Gchethankumar/OS-Linux-commands-Shell-script/assets/118348224/d38031c8-18e7-4331-9084-f111bb2f56a8)
 
 egrep l{2} newfile
 ## OUTPUT
 
+![Screenshot from 2024-03-23 08-54-40](https://github.com/Gchethankumar/OS-Linux-commands-Shell-script/assets/118348224/073654a5-dd66-494f-8882-310b99577e9e)
 
 
 egrep 's{1,2}' newfile
 ## OUTPUT 
+![Screenshot from 2024-03-23 08-54-54](https://github.com/Gchethankumar/OS-Linux-commands-Shell-script/assets/118348224/74922d61-fb38-4d0e-8b33-c93485569e94)
 
 
 cat > file23
@@ -230,84 +278,104 @@ cat > file23
 1001 | Ram | 10000 | HR
 ^d
 ```
+## OUTPUT
+![Screenshot from 2024-03-23 09-04-38](https://github.com/Gchethankumar/OS-Linux-commands-Shell-script/assets/118348224/250364a6-908f-4252-b964-bfc8701fb8d7)
 
 
 sed -n -e '3p' file23
 ## OUTPUT
 
+![Screenshot from 2024-03-23 09-05-09](https://github.com/Gchethankumar/OS-Linux-commands-Shell-script/assets/118348224/7e965151-5e47-40b8-9b16-9034e2bf5a4b)
 
 
 sed -n -e '$p' file23
 ## OUTPUT
 
+![Screenshot from 2024-03-23 09-05-17](https://github.com/Gchethankumar/OS-Linux-commands-Shell-script/assets/118348224/5013e9de-d40b-4d2d-9a69-d87a3047114e)
 
 
 sed  -e 's/Ram/Sita/' file23
 ## OUTPUT
 
+![Screenshot from 2024-03-23 09-05-36](https://github.com/Gchethankumar/OS-Linux-commands-Shell-script/assets/118348224/49382d1b-ace6-4fb1-898e-9d7856efd9ab)
 
 
 sed  -e '2s/Ram/Sita/' file23
 ## OUTPUT
 
+![Screenshot from 2024-03-23 09-05-51](https://github.com/Gchethankumar/OS-Linux-commands-Shell-script/assets/118348224/c5b5bb8e-71e0-40f8-aa3c-c9feab894971)
 
 
 sed  '/tom/s/5000/6000/' file23
 ## OUTPUT
 
+![Screenshot from 2024-03-23 09-06-05](https://github.com/Gchethankumar/OS-Linux-commands-Shell-script/assets/118348224/18a0445d-89d6-440e-8c15-d7daa530db49)
 
 
 sed -n -e '1,5p' file23
 ## OUTPUT
 
+![Screenshot from 2024-03-23 09-06-14](https://github.com/Gchethankumar/OS-Linux-commands-Shell-script/assets/118348224/9f13aa69-61d5-4e44-b2ae-04070d81cceb)
 
 
 sed -n -e '2,/Joe/p' file23
 ## OUTPUT
 
 
+![Screenshot from 2024-03-23 09-06-24](https://github.com/Gchethankumar/OS-Linux-commands-Shell-script/assets/118348224/311463d4-81fa-46b1-acf6-43f298e957c1)
 
 
 sed -n -e '/tom/,/Joe/p' file23
 ## OUTPUT
 
 
+![Screenshot from 2024-03-23 09-06-35](https://github.com/Gchethankumar/OS-Linux-commands-Shell-script/assets/118348224/7dc2140f-659f-4108-8c40-9fa5203ba51b)
 
 seq 10 
 ## OUTPUT
 
+![Screenshot from 2024-03-23 09-06-55](https://github.com/Gchethankumar/OS-Linux-commands-Shell-script/assets/118348224/4e535872-6b15-42aa-83a0-d90826849a77)
 
 
 seq 10 | sed -n '4,6p'
 ## OUTPUT
 
+![Screenshot from 2024-03-23 09-07-07](https://github.com/Gchethankumar/OS-Linux-commands-Shell-script/assets/118348224/44062eda-143c-47d2-af53-84622a32a731)
 
 
 seq 10 | sed -n '2,~4p'
 ## OUTPUT
 
+![Screenshot from 2024-03-23 09-07-15](https://github.com/Gchethankumar/OS-Linux-commands-Shell-script/assets/118348224/fc19d53a-5e5e-42d9-bcfc-a70acf54118d)
 
 
 seq 3 | sed '2a hello'
 ## OUTPUT
 
+![Screenshot from 2024-03-23 09-07-58](https://github.com/Gchethankumar/OS-Linux-commands-Shell-script/assets/118348224/0a99a276-0a71-4d83-a6eb-bd994180c2c6)
 
 
 seq 2 | sed '2i hello'
 ## OUTPUT
 
+![Screenshot from 2024-03-23 09-08-13](https://github.com/Gchethankumar/OS-Linux-commands-Shell-script/assets/118348224/cceef5f7-2707-4e9d-a5a2-03d67a4f537e)
+
 
 seq 10 | sed '2,9c hello'
 ## OUTPUT
 
+![Screenshot from 2024-03-23 09-08-29](https://github.com/Gchethankumar/OS-Linux-commands-Shell-script/assets/118348224/b6967350-495b-4c53-8812-046d654bdd46)
 
 sed -n '2,4{s/^/$/;p}' file23
 ## OUTPUT
 
+![Screenshot from 2024-03-23 09-08-40](https://github.com/Gchethankumar/OS-Linux-commands-Shell-script/assets/118348224/79036177-9c82-4520-901f-6b81bb62fbe5)
 
 
 sed -n '2,4{s/$/*/;p}' file23
+## OUTPUT
 
+![Screenshot from 2024-03-23 09-08-52](https://github.com/Gchethankumar/OS-Linux-commands-Shell-script/assets/118348224/1e72a9e3-c5fb-40cf-890f-1f4e60ac8fee)
 
 #Sorting File content
 cat > file21
